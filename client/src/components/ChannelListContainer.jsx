@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChannelList, useChatContext } from 'stream-chat-react';
 import Cookies from 'universal-cookie';
 
-//import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
+import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
 import MainIcon from '../assets/MainIcon.png'
 import LogoutIcon from '../assets/logout.png'
 
@@ -25,7 +25,7 @@ const SideBar = ({ logout }) => (
 
 const CompanyHeader = () => (
     <div className="channel-list__header">
-        <p className="channel-list__header__text">Text1</p>
+        <p className="channel-list__header__text">ETWCord</p>
     </div>
 
 )
@@ -37,6 +37,7 @@ const ChannelListContainer = () => {
         <SideBar />
         <div className="channel-list__list__wrapper">
             <CompanyHeader />
+            <ChannelSearch />
         </div>
     </>
   )
