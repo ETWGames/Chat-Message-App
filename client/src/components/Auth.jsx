@@ -6,12 +6,26 @@ import signinImage from '../assets/signup.jpg';
 
 const Auth = () => {
     const [isSignup, setisSignup] = useState(false)
+    const handleChannge = () => {}
   return (
     <div className="auth__form-container">
         <div className="auth__form-container_fields">
             <div className='auth__form-container_fields-content'>
                 <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
-
+                <form onSubmit={() => {}}>
+                    {!isSignup && (
+                        <div className='auth__form-container_fields-content_input'>
+                            <label htmlFor='fullname'>Full Name</label>
+                            <input 
+                            name='fullName'
+                            type='text'
+                            placeholder='Full Name'
+                            onChange={handleChange}
+                            required
+                             />
+                        </div>
+                    )}
+                </form>
             </div>
         </div>
     </div>
