@@ -1,6 +1,6 @@
 # Chat Messaging App
 
-This is a fullstack chat messaging app build using: 
+This is a fullstack chat messaging app built using: 
 - ReactJS
 - Stream
 - Twilio
