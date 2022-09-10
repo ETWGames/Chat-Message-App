@@ -2,6 +2,7 @@
 
 This is a fullstack chat messaging app built using: 
 - ReactJS
+- Docker
 - Stream
 - Twilio
 - NodeJS
